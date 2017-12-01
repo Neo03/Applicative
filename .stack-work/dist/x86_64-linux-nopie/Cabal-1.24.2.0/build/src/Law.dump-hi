@@ -1,0 +1,80 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-28 18:26:13.942275303 UTC
+
+interface Applicative-0.1.0.0-L8nvUais0sN4TbsZHnF7lQ:Law 8002
+  interface hash: 8ec478eacf86cd5f9e17f3d60ee24930
+  ABI hash: dd010942b3d4928111d006042127db49
+  export-list hash: 88703321caf9ad1db6a5a928418a64bf
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 05c6dca22f9dd1832b6d5a0e6ea172a8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Law.embed
+  Law.mApply
+  Law.mpure
+  Law.myTest
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+81a1cae067dcb68ec1806082b0b58114
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Law.$trModule2 Law.$trModule1) -}
+bb86e87b4f395d34999766a147214751
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Law"#) -}
+eb48e00506bc59ffb15a64906c068dbf
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "Applicative-0.1.0.0-L8nvUais0sN4TbsZHnF7lQ"#) -}
+e8cbce561f07ba9eb7e2c1f5d07b6eea
+  embed :: GHC.Num.Num a => (a -> b) -> b
+  {- Arity: 1, HasNoCafRefs,
+     Strictness: <L,1*U(A,A,A,A,A,A,1*C1(U))>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a @ b ($dNum :: GHC.Num.Num a) ->
+                 let {
+                   ds :: a = GHC.Num.fromInteger @ a $dNum Law.embed1
+                 } in
+                 \ (ds1 :: a -> b) -> ds1 ds) -}
+376f32ad17135c7bbf46d41c089261d2
+  embed1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+3525d4bdb37d21322f4cf9031158a661
+  mApply ::
+    GHC.Base.Maybe ((a -> b) -> b)
+    -> GHC.Base.Maybe (a -> b) -> GHC.Base.Maybe b
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                (\ @ a @ b -> GHC.Base.$fApplicativeMaybe_$c<*> @ (a -> b) @ b) -}
+386a6912c8075bd7853b5ab79d5bc0d0
+  mpure :: a -> GHC.Base.Maybe a
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U>m2,
+     Unfolding: InlineRule (0, True, True) GHC.Base.Just -}
+b6fb5f4c847fddf199f471ef4e8efd63
+  myTest :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Yes it works!"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

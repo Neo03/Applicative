@@ -1,0 +1,482 @@
+
+==================== FINAL INTERFACE ====================
+2017-11-28 18:26:14.626195053 UTC
+
+interface Applicative-0.1.0.0-L8nvUais0sN4TbsZHnF7lQ:Ex1 8002
+  interface hash: 8e9654c289edb38268d2628b1e8999e8
+  ABI hash: cd74a87abc0beeeca5259ddf275b8d61
+  export-list hash: bf52195241669c7485fec309beb9acba
+  orphan hash: 911b246edad9df1a7c891ed5f3cb8014
+  flag hash: 05c6dca22f9dd1832b6d5a0e6ea172a8
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Ex1.added
+  Ex1.f
+  Ex1.g
+  Ex1.h
+  Ex1.m
+  Ex1.max'
+  Ex1.maxed
+  Ex1.summed
+  Ex1.tupled
+  Ex1.x1
+  Ex1.x2
+  Ex1.xs
+  Ex1.y
+  Ex1.y1
+  Ex1.y2
+  Ex1.ys
+  Ex1.z
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Applicative 32430a90492e727f4bd80db71c28600c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Functor 5ab1dc703df5b482e77efb697833ca3c
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+a11503bf5851b33b005e14e14398f744
+  $s$fOrdMaybe_$cmax ::
+    GHC.Base.Maybe GHC.Types.Int
+    -> GHC.Base.Maybe GHC.Types.Int -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Base.Maybe GHC.Types.Int)
+                   (y22 :: GHC.Base.Maybe GHC.Types.Int) ->
+                 case x of wild {
+                   GHC.Base.Nothing -> y22
+                   GHC.Base.Just a1
+                   -> case y22 of wild1 {
+                        GHC.Base.Nothing -> wild
+                        GHC.Base.Just b1
+                        -> case GHC.Classes.leInt a1 b1 of wild2 {
+                             GHC.Types.False -> wild GHC.Types.True -> wild1 } } }) -}
+a653a9d5e905454d0c1af4f8b2ffdeae
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Ex1.$trModule2 Ex1.$trModule1) -}
+278e9ddeb58dbb1cfb7efdaf74d70831
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Ex1"#) -}
+0287cef60055bd2a544ca7612f6de44c
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "Applicative-0.1.0.0-L8nvUais0sN4TbsZHnF7lQ"#) -}
+992f16d00076383b422b2449a3ac4270
+  added :: GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Unfolding: (Ex1.y) -}
+b1f6caae568752ad0a471283855b3026
+  f ::
+    (GHC.Num.Num a, GHC.Classes.Eq a) =>
+    a -> GHC.Base.Maybe [GHC.Types.Char]
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><L,U(C(C1(U)),A)><L,U>,
+     Unfolding: (\ @ a
+                   ($dNum :: GHC.Num.Num a)
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: a) ->
+                 GHC.List.lookup
+                   @ a
+                   @ [GHC.Types.Char]
+                   $dEq
+                   x
+                   (GHC.Types.:
+                      @ (a, [GHC.Types.Char])
+                      (GHC.Num.fromInteger @ a $dNum Ex1.y9, Ex1.f3)
+                      (GHC.Types.:
+                         @ (a, [GHC.Types.Char])
+                         (GHC.Num.fromInteger @ a $dNum Ex1.y14, Ex1.f2)
+                         (GHC.Types.:
+                            @ (a, [GHC.Types.Char])
+                            (GHC.Num.fromInteger @ a $dNum Ex1.y11, Ex1.f1)
+                            (GHC.Types.[] @ (a, [GHC.Types.Char])))))) -}
+1082fb8818619601d71203c697ccaa24
+  f1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "kbai"#) -}
+8832bd8f1df85122e9ec0b777246f53c
+  f2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "julie"#) -}
+4cfc5cd0ad84d540716263569ea2efde
+  f3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "hello"#) -}
+32e88c5aab73711a14d962a9144e133d
+  g ::
+    (GHC.Num.Num a, GHC.Classes.Eq a) =>
+    a -> GHC.Base.Maybe [GHC.Types.Char]
+  {- Arity: 3,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><L,U(C(C1(U)),A)><L,U>,
+     Unfolding: (\ @ a
+                   ($dNum :: GHC.Num.Num a)
+                   ($dEq :: GHC.Classes.Eq a)
+                   (y22 :: a) ->
+                 GHC.List.lookup
+                   @ a
+                   @ [GHC.Types.Char]
+                   $dEq
+                   y22
+                   (GHC.Types.:
+                      @ (a, [GHC.Types.Char])
+                      (GHC.Num.fromInteger @ a $dNum Ex1.g6, Ex1.g5)
+                      (GHC.Types.:
+                         @ (a, [GHC.Types.Char])
+                         (GHC.Num.fromInteger @ a $dNum Ex1.g4, Ex1.g3)
+                         (GHC.Types.:
+                            @ (a, [GHC.Types.Char])
+                            (GHC.Num.fromInteger @ a $dNum Ex1.g2, Ex1.g1)
+                            (GHC.Types.[] @ (a, [GHC.Types.Char])))))) -}
+139524cb5901a4605d94e390888d2e23
+  g1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "aloha"#) -}
+dcb75e206cc5069475f2f3e715a7ac53
+  g2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (9) -}
+5ca74de5df8d243699501269c8c3c8bd
+  g3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "chris"#) -}
+a19d2c66e3fc567410dcff70d2f02b67
+  g4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (8) -}
+9c9a7e6821ebd8df1e6b621e5bb1df43
+  g5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "sup?"#) -}
+028f1402db57415d91aab02e06870681
+  g6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (7) -}
+be920032444a7326af8a9c729c066ada
+  h ::
+    (GHC.Num.Num b, GHC.Num.Num a, GHC.Classes.Eq a) =>
+    a -> GHC.Base.Maybe b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><L,U(A,A,A,A,A,A,C(U))><L,U(C(C1(U)),A)><L,U>,
+     Unfolding: (\ @ b
+                   @ a
+                   ($dNum :: GHC.Num.Num b)
+                   ($dNum1 :: GHC.Num.Num a)
+                   ($dEq :: GHC.Classes.Eq a)
+                   (z1 :: a) ->
+                 GHC.List.lookup
+                   @ a
+                   @ b
+                   $dEq
+                   z1
+                   (GHC.Types.:
+                      @ (a, b)
+                      (GHC.Num.fromInteger @ a $dNum1 Ex1.y12,
+                       GHC.Num.fromInteger @ b $dNum Ex1.y9)
+                      (GHC.Types.:
+                         @ (a, b)
+                         (GHC.Num.fromInteger @ a $dNum1 Ex1.y14,
+                          GHC.Num.fromInteger @ b $dNum Ex1.y11)
+                         (GHC.Types.:
+                            @ (a, b)
+                            (GHC.Num.fromInteger @ a $dNum1 Ex1.y8,
+                             GHC.Num.fromInteger @ b $dNum Ex1.g6)
+                            (GHC.Types.[] @ (a, b)))))) -}
+4d860409084d563f73967ac2ac4e2f50
+  m ::
+    (GHC.Num.Num b, GHC.Num.Num a, GHC.Classes.Eq a) =>
+    a -> GHC.Base.Maybe b
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(A,A,A,A,A,A,C(U))><L,U(A,A,A,A,A,A,C(U))><L,U(C(C1(U)),A)><L,U>,
+     Unfolding: (\ @ b
+                   @ a
+                   ($dNum :: GHC.Num.Num b)
+                   ($dNum1 :: GHC.Num.Num a)
+                   ($dEq :: GHC.Classes.Eq a)
+                   (x :: a) ->
+                 GHC.List.lookup
+                   @ a
+                   @ b
+                   $dEq
+                   x
+                   (GHC.Types.:
+                      @ (a, b)
+                      (GHC.Num.fromInteger @ a $dNum1 Ex1.y14,
+                       GHC.Num.fromInteger @ b $dNum Ex1.m3)
+                      (GHC.Types.:
+                         @ (a, b)
+                         (GHC.Num.fromInteger @ a $dNum1 Ex1.g4,
+                          GHC.Num.fromInteger @ b $dNum Ex1.m2)
+                         (GHC.Types.:
+                            @ (a, b)
+                            (GHC.Num.fromInteger @ a $dNum1 Ex1.y15,
+                             GHC.Num.fromInteger @ b $dNum Ex1.m1)
+                            (GHC.Types.[] @ (a, b)))))) -}
+0e3050c132fd378e7823433ff5ea3a05
+  m1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (9001) -}
+e7f48c462cb594c54cecf672b973eed9
+  m2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (13) -}
+394c1623ae6d4e212ef6ce0f7153ccf6
+  m3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (10) -}
+4f12c6a5e5c8677fab9c1813380d9b6e
+  max' ::
+    GHC.Base.Maybe GHC.Types.Int
+    -> GHC.Base.Maybe GHC.Types.Int -> GHC.Base.Maybe GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Base.Maybe GHC.Types.Int)
+                   (y22 :: GHC.Base.Maybe GHC.Types.Int) ->
+                 case x of wild {
+                   GHC.Base.Nothing -> y22
+                   GHC.Base.Just a1
+                   -> case y22 of wild1 {
+                        GHC.Base.Nothing -> wild
+                        GHC.Base.Just b1
+                        -> case a1 of wild2 { GHC.Types.I# x4 ->
+                           case b1 of wild3 { GHC.Types.I# y23 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<=# x4 y23) of wild4 {
+                             GHC.Types.False -> wild GHC.Types.True -> wild1 } } } } }) -}
+6997dcd2a94364f764d9b7cb0304a226
+  maxed :: GHC.Base.Maybe GHC.Types.Int
+  {- Unfolding: (case Ex1.x1 of wild {
+                   GHC.Base.Nothing -> Ex1.y1
+                   GHC.Base.Just a1
+                   -> case Ex1.y1 of wild1 {
+                        GHC.Base.Nothing -> wild
+                        GHC.Base.Just b1
+                        -> case a1 of wild2 { GHC.Types.I# x ->
+                           case b1 of wild3 { GHC.Types.I# y22 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.<=# x y22) of wild4 {
+                             GHC.Types.False -> wild GHC.Types.True -> wild1 } } } } }) -}
+2647e48badae10b013106c575f17ae5a
+  summed ::
+    (GHC.Base.Maybe GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- Strictness: m, Unfolding: ((Ex1.x2, Ex1.summed1)) -}
+96bdab60f357d1798bea207fee05de6d
+  summed1 :: GHC.Integer.Type.Integer
+  {- Unfolding: (case Ex1.y2 of wild {
+                   GHC.Base.Nothing -> Data.Monoid.$fMonoidSum1
+                   GHC.Base.Just x
+                   -> GHC.Integer.Type.plusInteger x Data.Monoid.$fMonoidSum1 }) -}
+5d25e5a3ef5297951a9dc2148204ab46
+  tupled ::
+    (GHC.Base.Maybe GHC.Integer.Type.Integer,
+     GHC.Base.Maybe GHC.Integer.Type.Integer)
+  {- Strictness: m, Unfolding: ((Ex1.y, Ex1.z)) -}
+43a37634e607a703e3cc4ca44f3bffca
+  x1 :: GHC.Base.Maybe GHC.Types.Int
+  {- Unfolding: (case Ex1.x1_go Ex1.y16 0# of wild {
+                   [] -> GHC.Base.Nothing @ GHC.Types.Int
+                   : a1 ds1 -> GHC.Base.Just @ GHC.Types.Int a1 }) -}
+42e76e6a0fb581538d143da6fd228b1f
+  x1_go ::
+    [GHC.Integer.Type.Integer] -> GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+dfe68e59d0774dc7b5c1c70f4c0d0ebf
+  x2 :: GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.List.lookup
+                   @ GHC.Integer.Type.Integer
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   Ex1.y9
+                   Ex1.y21) -}
+e00ad13122ebdf64feb52c3b8d7a1f84
+  xs :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y15
+                   Ex1.xs1) -}
+723ae2c34cc73ec25d03671053ee9c7d
+  xs1 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y12
+                   Ex1.xs2) -}
+1b2377fd3e2dde8b81805d0818df62ff
+  xs2 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y9
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+5c8c9f8dbb30f504143f926e89ff456f
+  y :: GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Unfolding: (case GHC.List.lookup
+                        @ GHC.Integer.Type.Integer
+                        @ GHC.Integer.Type.Integer
+                        GHC.Integer.Type.$fEqInteger
+                        Ex1.y9
+                        Ex1.y4 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Integer.Type.Integer
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ GHC.Integer.Type.Integer
+                        (GHC.Integer.Type.plusInteger x Ex1.y9) }) -}
+69e299ecee02714f0c28816652ee7dbc
+  y1 :: GHC.Base.Maybe GHC.Types.Int
+  {- Unfolding: (case Ex1.y1_go Ex1.y16 0# of wild {
+                   [] -> GHC.Base.Nothing @ GHC.Types.Int
+                   : a1 ds1 -> GHC.Base.Just @ GHC.Types.Int a1 }) -}
+5218e14d686616a67b5895f9dae2b12b
+  y10 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Unfolding: ((Ex1.y12, Ex1.y11)) -}
+48e14bee12ffca40693752b1285210bb
+  y11 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+1dce9853d7f812e1713e3248edd9067f
+  y12 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+ae177027ce47340ac1f7b6b126ab2e97
+  y13 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Unfolding: ((Ex1.y15, Ex1.y14)) -}
+e9df828c325746c3d624135706402c7b
+  y14 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+4b7733239e4401555503f11bf20b237c
+  y15 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+0c854922b74c6e9b6a54de9ada66778f
+  y16 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y15
+                   Ex1.y17) -}
+e682769ecb7db88de31993ad1fbbf2f5
+  y17 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y12
+                   Ex1.y18) -}
+9e9ef88bc26beb9f8d3a64ecb8d644eb
+  y18 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y9
+                   Ex1.y19) -}
+27955c0fdd863e3ad3bd89f30c9a1d5b
+  y19 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y14
+                   Ex1.y20) -}
+aeafeaf756da1513ed0d1cdfad8279fa
+  y1_go ::
+    [GHC.Integer.Type.Integer] -> GHC.Prim.Int# -> [GHC.Types.Int]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,U> -}
+529089b211a0fdacb88db840bcfdd5e3
+  y2 :: GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Unfolding: (GHC.List.lookup
+                   @ GHC.Integer.Type.Integer
+                   @ GHC.Integer.Type.Integer
+                   GHC.Integer.Type.$fEqInteger
+                   Ex1.y12
+                   Ex1.y21) -}
+af3f0137f07e94cf69f89a576397ff24
+  y20 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y11
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+a5a59ae75aa061b3f46f0631da614b00
+  y21 :: [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- Unfolding: (GHC.List.zip
+                   @ GHC.Integer.Type.Integer
+                   @ GHC.Integer.Type.Integer
+                   Ex1.xs
+                   Ex1.ys) -}
+92b356177741dbc58488d0ca1ba5641e
+  y4 :: [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   Ex1.y13
+                   Ex1.y5) -}
+3337acb4bec797cbecab0eaa25db5dd8
+  y5 :: [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   Ex1.y10
+                   Ex1.y6) -}
+828de1e3e382d4f2f8819953fa2eebd2
+  y6 :: [(GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+                   Ex1.y7
+                   (GHC.Types.[]
+                      @ (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer))) -}
+71d7c15313e1ae720a27d051f6f87f85
+  y7 :: (GHC.Integer.Type.Integer, GHC.Integer.Type.Integer)
+  {- HasNoCafRefs, Unfolding: ((Ex1.y9, Ex1.y8)) -}
+8d8d7a6b766a99b2d87b5da8b2e076a7
+  y8 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (6) -}
+f23fe5737cb09f110d7b6f283151bc84
+  y9 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+a9f8aafab5604ae5973ed5481c9046ac
+  ys :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y14
+                   Ex1.ys1) -}
+723f6c12a1d71a46e62d600d9aac5142
+  ys1 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y11
+                   Ex1.ys2) -}
+0ebf7351c341033bf6ffbb11664fb820
+  ys2 :: [GHC.Integer.Type.Integer]
+  {- HasNoCafRefs, Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Integer.Type.Integer
+                   Ex1.y8
+                   (GHC.Types.[] @ GHC.Integer.Type.Integer)) -}
+cb558a7c4b0bb9c9508b69e069061ba1
+  z :: GHC.Base.Maybe GHC.Integer.Type.Integer
+  {- Unfolding: (case GHC.List.lookup
+                        @ GHC.Integer.Type.Integer
+                        @ GHC.Integer.Type.Integer
+                        GHC.Integer.Type.$fEqInteger
+                        Ex1.y12
+                        Ex1.y4 of wild {
+                   GHC.Base.Nothing -> GHC.Base.Nothing @ GHC.Integer.Type.Integer
+                   GHC.Base.Just x
+                   -> GHC.Base.Just
+                        @ GHC.Integer.Type.Integer
+                        (GHC.Integer.Type.plusInteger x Ex1.y9) }) -}
+"SPEC/Ex1 $fOrdMaybe_$cmax @ Int" [ALWAYS] forall ($dOrd :: GHC.Classes.Ord
+                                                              GHC.Types.Int)
+  GHC.Base.$fOrdMaybe_$cmax @ GHC.Types.Int $dOrd
+  = Ex1.$s$fOrdMaybe_$cmax
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

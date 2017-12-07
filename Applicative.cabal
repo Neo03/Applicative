@@ -15,6 +15,7 @@ cabal-version:       >=1.10
 
 library
   hs-source-dirs:      src
+                    ,  src/EX1
   exposed-modules:     Lib
                     ,  Ex1
                     ,  Ex2
@@ -23,6 +24,9 @@ library
                     ,  Law
                     ,  BadMonoid
                     ,  ZipListApp
+                    ,  Exers1
+                    ,  Exers2
+                    ,  Exers3
   build-depends:       base >= 4.7 && < 5
                     ,  QuickCheck
                     ,  checkers

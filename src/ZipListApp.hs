@@ -6,6 +6,7 @@ import Test.QuickCheck
 import Test.QuickCheck.Checkers
 import Test.QuickCheck.Classes
 
+
 data List a = Nil | Cons a (List a) deriving (Eq, Show)
 
 take' :: Int -> List a -> List a
@@ -30,7 +31,13 @@ instance Applicative List  where
   (<*>) Nil _ = Nil
   (<*>) (Cons x lx) ca = fmap x ca <> (lx <*> ca)
 
+instance Arbitrary a => Arbitrary(List a) where
+  arbitrary = Cons <$> arbitrary <*> arbitrary
+
 newtype ZipList' a = ZipList' (List a) deriving (Eq, Show)
+
+instance Arbitrary a => Arbitrary (ZipList' a) where
+  arbitrary = ZipList' <$> arbitrary
 
 instance Eq a => EqProp (ZipList' a) where
   xs =-= ys = xs' `eq` ys'
